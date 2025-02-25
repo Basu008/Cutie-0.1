@@ -1,0 +1,25 @@
+{
+  "name": "cutie-0.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Basu008/Cutie-0.1.git"
+  },
+  "author": "Basu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Basu008/Cutie-0.1/issues"
+  },
+  "homepage": "https://github.com/Basu008/Cutie-0.1#readme",
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "toml": "^3.0.0"
+  },
+  "type": "module"
+}
