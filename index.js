@@ -8,11 +8,19 @@ const client = new Client({
      GatewayIntentBits.MessageContent]
  });
 
-client.on("messageCreate", (message) => {
+client.on(Events.MessageCreate, (message) => {
     if (message.author.bot) return
     message.reply({
-        content:"Hey dhuchki!"
+        content:Config.app.messageReply
     })
 })
 
+client.on(Events.InteractionCreate, (interaction) => {
+    interaction.reply(getRandomMessage())
+})
+
 client.login(Config.app.token)
+
+function getRandomMessage(){
+    return Config.app.messages[Math.floor(Math.random() * 5)]
+}
